@@ -1,0 +1,30 @@
+/*Header*/
+* {font: 16px 'roboto';}
+header{display: flex; justify-content: space-between; padding: 20px;}
+.logo {width: max(min(28vw, 150px), (10vw));}
+.navbar {width: 100%;}
+.navbar-nav {display: flex; justify-content: space-evenly; width: 100%;}
+.navbar-toggler {transform: scale(1.2);}
+.nav-link {font-size: 24px}
+.active {font-weight: bold;}
+
+/*Footer*/
+footer{display: flex; justify-content: center; padding: 80px 0;}
+.footer {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    width: 30%;
+    margin-top: 15px;
+}
+.footer__red-1{width: 40px}
+.footer__red-2{width: 45px}
+.footer__red-3{width: 55px}
+
+
+@media only screen and (max-width: 800px){
+    .footerRedes {width: 50%;}
+}
+@media only screen and (max-width: 400px){
+    .footerRedes {width: 60%;}
+}

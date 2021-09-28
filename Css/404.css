@@ -1,0 +1,11 @@
+section {
+    background: black;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    height: 90vh;
+}
+h1, p {color:white;}
+h1 {font: 28px 'Playfair Display';}

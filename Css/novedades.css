@@ -1,0 +1,24 @@
+.novedades__feed {
+  display: flex; }
+  .novedades__feed .novedades__titular {
+    background-size: cover;
+    background-position: right;
+    width: 40%;
+    height: 83.5vh;
+    background-image: url("../Imagenes/travisscott.jpg"); }
+  .novedades__feed .novedades {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    width: 60%; }
+    .novedades__feed .novedades iframe {
+      width: 100%;
+      height: 100%; }
+    .novedades__feed .novedades .novedades__imagen--1 {
+      background-size: cover;
+      background-position: center;
+      background-image: url("../Imagenes/zola.png"); }
+    .novedades__feed .novedades .novedades__imagen--2 {
+      background-size: cover;
+      background-position: center;
+      background-image: url("../Imagenes/novedades.jpg"); }

@@ -1,0 +1,26 @@
+@mixin fondo($size, $position) {background-size: $size; background-position: $position;}
+
+.novedades__feed {
+    display: flex;
+    .novedades__titular {
+        @include fondo(cover, right);
+        width: 40%;
+        height: 83.5vh;
+        background-image: url("../Imagenes/travisscott.jpg");
+    }
+    .novedades {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        width: 60%;
+        iframe{width: 100%; height: 100%;}
+        .novedades__imagen--1{
+            @include fondo(cover, center);
+            background-image: url("../Imagenes/zola.png");
+        }
+        .novedades__imagen--2{
+            @include fondo(cover, center);
+            background-image: url("../Imagenes/novedades.jpg");
+        }
+    }
+}
