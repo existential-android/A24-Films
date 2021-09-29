@@ -9,15 +9,19 @@ header {
 section {
   text-align: center; }
 
-.presentacion .presentacion__titulo {
-  font: bold 33px 'Playfair Display';
-  letter-spacing: 1px;
-  margin-top: 4%; }
-
-.presentacion .presentacion__parrafo {
-  text-align: justify;
-  margin: 4% 30%;
-  font: 25px 'roboto'; }
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .presentacion .presentacion__titulo {
+    font: bold 33px 'Playfair Display';
+    letter-spacing: 1px;
+    margin-top: 4%; }
+  .presentacion .presentacion__parrafo {
+    text-align: justify;
+    width: max(50%, min(75%, 330px));
+    margin: 4% 0;
+    font: 25px 'roboto'; }
 
 .banner__contenedor {
   width: 100%;
