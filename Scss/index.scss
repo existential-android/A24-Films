@@ -16,14 +16,14 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 4% 0;
     .presentacion__titulo {
         font: bold 33px 'Playfair Display';
         letter-spacing: 1px;
-        margin-top: 4%; 
     }   
     .presentacion__parrafo {
         text-align: justify;
-        margin: 4% 0;
+        margin: 4% 0 0 0;
         font: 25px 'roboto'; 
     }
 }
