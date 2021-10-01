@@ -15,7 +15,6 @@ footer{display: flex; justify-content: center; padding: min(80px, 15%) 0;}
     justify-content: space-between;
     align-items: center; 
     width: max(30%, min(334px, 75%));
-    margin-top: 15px;
 }
 .footer__red-1{width: 40px}
 .footer__red-2{width: 45px}

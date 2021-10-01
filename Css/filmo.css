@@ -1,5 +1,5 @@
 section {
-    background: black;
+    background: rgb(245, 245, 245);
 }
 .peliculas__contenedor {
     display: grid;
@@ -15,8 +15,8 @@ h1 {
     justify-content: center;
     align-items: center;
     font: bold 33px 'Playfair Display'; 
-    color: white;
-    margin: 0;
+    color: black;
+    letter-spacing: max(1vw, 11px);
     height: 13.5vh;
 }
 .peliculas {
@@ -28,6 +28,9 @@ h1 {
     width: 70%;
     background: white;
     transition: 1s;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #EEE; 
 }
 .peliculas:hover{
     transform: scale(1.15);
@@ -35,9 +38,10 @@ h1 {
 .lista__peliculas {
     display: flex; 
     flex-direction: column; 
-    justify-content: space-evenly; 
-    height: 30vh; 
-    padding: 0 15%; 
+    justify-content: space-between;
+    gap: 15px;
+    padding: 10% 15%;
+    margin-bottom: 0;
     list-style-type: none;
 }
 .pelicula__imagen {
@@ -47,15 +51,21 @@ h1 {
     background-size: cover;
     width: 100%;
     height: 20VH;
+    background-position: center;
 }
 #film1 {background-image: url("../Imagenes/greenknight.jpg");}
 #film2 {background-image: url("../Imagenes/minari.jpg");}
 #film3 {background-image: url("../Imagenes/uncut.jpg");}
 #film4 {background-image: url("../Imagenes/hereditary.jpg");}
 #film5 {background-image: url("../Imagenes/sacreddeer.jpg");}
-#film6 {background-image: url("../Imagenes/swissarmy.jpg");}
+#film6 {background-image: url("../Imagenes/swissarmy.jpg"); background-position: 40%;}
 #film7 {background-image: url("../Imagenes/exmachina.jpg");}
-#film8 {background-image: url("../Imagenes/enemy.jpg");}
+#film8 {background-image: url("../Imagenes/enemy.jpg"); background-position: 40%;}
 #film9 {background-image: url("../Imagenes/springbreakers.jpg");}
 h2 {font: bold 45px 'Courier Prime'; color: white;}
 li {font-size: 23px;}
+
+@media only screen and (max-width: 517px){
+    .peliculas__contenedor{padding: 0 0 40px 0;}
+    .peliculas{width: 85%;}
+}
