@@ -27,5 +27,5 @@ i {color: black;}
 
 @media only screen and (max-width: 790px){
     .footerRedes {width: 50%;}
-    i {transform: scale(0.8);}
+    i {transform: scale(0.7);}
 }
