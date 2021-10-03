@@ -46,8 +46,7 @@ section {
 /*Estilos del carousel bootstrap*/
 .imagenes {
   display: flex;
-  justify-content: center;
-  padding: 20px 0;}
+  justify-content: center;}
 
 .carousel {
   width: max(50%, min(75%, 592px))}

@@ -9,21 +9,23 @@ header{display: flex; justify-content: space-between; padding: 20px;}
 .active {font-weight: bold;}
 
 /*Footer*/
-footer{display: flex; justify-content: center; padding: min(80px, 15%) 0;}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    padding: min(80px, 8%) 0;
+}
 .footer {
     display: flex; 
     justify-content: space-between;
     align-items: center; 
-    width: max(30%, min(334px, 75%));
+    width: max(30%, min(334px, 80%));
 }
-.footer__red-1{width: 40px}
-.footer__red-2{width: 45px}
-.footer__red-3{width: 55px}
+i {color: black;}
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 790px){
     .footerRedes {width: 50%;}
-}
-@media only screen and (max-width: 400px){
-    .footerRedes {width: 60%;}
+    i {transform: scale(0.8);}
 }
