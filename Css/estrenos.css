@@ -12,6 +12,7 @@
 
 .estrenos__contenedor {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap; }
   h1 {
     display: flex;
@@ -23,56 +24,53 @@
     text-align: center;
     letter-spacing: max(1vw, 11px);}
   .estrenos__contenedor .estrenos__principal {
-    position: sticky;
-    top: 10%;
-    height: auto;
-    align-self: flex-start;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
-    background-color: white;
-    border-style: solid;
-    border-width: 0 1px 0 0;
-    border-color: black; }
+    width: 100%;
+    background-color: white;}
     .estrenos__contenedor .estrenos__principal h2 {
       font: bold 25px 'roboto';
       letter-spacing: 40px; }
-    .estrenos__contenedor .estrenos__principal img {
-      border-radius: 50%;
-      width: 20vw;
-      height: 40vh;
-      object-fit: cover; }
-    .estrenos__contenedor .estrenos__principal p {
-      position: relative;
-      width: 13vw;
-      font: 20px 'roboto';
-      text-align: justify;
-      bottom: 120px;
-      background: white;
-      padding: 7% 5%;
-      box-shadow: 0px 0px 1px #555; }
-  .estrenos__contenedor .estrenos__secundario {
-    width: 70%; }
+      .estrenos__contenedor .estrenos__principal div p {
+        font: 20px 'roboto';
+        text-align: justify;
+        bottom: 120px;
+        background: white;
+        padding: 7% 5%;
+        margin: 0;}
+          .estrenos__contenedor .estrenos__principal div img {
+            width: 100%;
+            height: 76vh;
+            object-fit: cover; }
+    .estrenos__secundario {gap: 0px;}
     .estrenos__contenedor .estrenos__secundario .estrenos {
       display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background: white; }
+      flex-wrap: wrap;
+      background: white; 
+      border-style: solid;
+      border-width: 1px 0 0 0;
+      border-color: #555;}
       .estrenos__contenedor .estrenos__secundario .estrenos h2 {
         text-align: center;
         writing-mode: vertical-lr;
         transform: rotate(180deg);
         font-size: 25px;
         letter-spacing: 10px;
-        width: 10vw;
-        height: 32.5vh; }
+        height: 30vh;
+        padding: 0 10px;
+        margin: 0;}
   .estrenos__contenedor .estrenos img {
-    width: 27vw;
-    height: 27vh;
-    object-fit: cover; }
-  .estrenos__contenedor .estrenos p {
+    flex-grow: 1;
     width: 20%;
+    height: 30vh;
+    object-fit: cover;}
+  #estreno2{object-position: 70%;}
+  #estreno3{object-position: 75%;}
+  #estreno4{object-position: 80%;}
+  .estrenos__contenedor .estrenos p {
+    width: 100%;
     font: 18px 'roboto';
     text-align: justify;
-    padding: 0 2%; }
+    padding: 40px 40px 40px 40px;
+    margin: 0;}
