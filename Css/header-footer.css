@@ -16,6 +16,7 @@ footer{
     gap: 3vh;
     padding: min(80px, 8%) 0;
 }
+footer a{margin-right: 32px;}
 .footer {
     display: flex; 
     justify-content: space-between;

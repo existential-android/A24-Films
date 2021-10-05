@@ -31,9 +31,6 @@ h1 {
     border-width: 1px;
     border-color: #EEE; 
 }
-.peliculas:hover{
-    transform: scale(1.05);
-}
 .lista__peliculas {
     display: flex; 
     flex-direction: column; 

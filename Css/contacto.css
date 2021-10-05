@@ -9,14 +9,15 @@ main {
     align-items: center;
     height: 90vh;
     backdrop-filter: blur(8px); }
-    main section h1 {
+    h1 {
       display: flex;
       justify-content: center;
       align-items: center;
+      letter-spacing: max(1vw, 11px);
       font: bold 33px 'Playfair Display';
       color: white;
       margin: 0;
-      height: 13.5vh; }
+      height: 10vh; }
     main section .formulario__contenedor {
       width: max(min(90%, 450px), 40%);
       height: max(424px, 60vh);

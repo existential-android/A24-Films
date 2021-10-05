@@ -38,7 +38,7 @@ section {
 @keyframes desenfoque {
   from {
     filter: blur(8px);
-    transform: scale(1.2); }
+    transform: scale(1.4); }
   to {
     filter: blur(0px);
     transform: scale(1); } }
