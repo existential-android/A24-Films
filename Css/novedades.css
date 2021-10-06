@@ -2,16 +2,27 @@ h1 {font: bold 33px 'Playfair Display'; letter-spacing: max(1vw, 11px); text-ali
 .novedades__feed {
   display: flex; }
   .novedades__feed .novedades__titular {
+    display: flex;
+    flex-direction: column-reverse;
     background-size: cover;
     background-position: right;
     width: 40%;
     height: 83.5vh;
     background-image: url("../Imagenes/travisscott.jpg"); }
+    .novedades__feed .novedades__titular h2 {
+      padding: 2%;
+      font-size: 40px;
+      color: white;} 
   .novedades__feed .novedades {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     width: 60%; }
+    .novedades__feed .novedades div {display: flex; flex-direction: column-reverse;} 
+      .novedades__feed .novedades div h2 {
+        padding: 2%;
+        font-size: 30px;
+        color: white;} 
     .novedades__feed .novedades iframe {
       width: 100%;
       height: 100%; }
