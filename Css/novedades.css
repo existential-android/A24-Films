@@ -1,36 +1,77 @@
-h1 {font: bold 33px 'Playfair Display'; letter-spacing: max(1vw, 11px); text-align: center;}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: bold 33px 'Playfair Display'; 
+    color: black;
+    letter-spacing: max(1vw, 11px);
+    height: 10vh;
+}
 .novedades__feed {
-  display: flex; }
+  display: flex;
+  justify-content: center;}
   .novedades__feed .novedades__titular {
     display: flex;
     flex-direction: column-reverse;
     background-size: cover;
-    background-position: right;
-    width: 40%;
-    height: 83.5vh;
-    background-image: url("../Imagenes/travisscott.jpg"); }
+    background-position: 94%;
+    transition: 1s;
+    width: 100%;
+    height: 80vh;
+    background-image: url("../Imagenes/travisscott.jpg");}
+    .novedades__feed a {text-decoration: none; overflow: hidden;}
     .novedades__feed .novedades__titular h2 {
-      padding: 2%;
-      font-size: 40px;
+      padding: 5%;
+      transition: 1s;
+      font-size: min(40px, max(5vw, 30px));
       color: white;} 
   .novedades__feed .novedades {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    width: 60%; }
-    .novedades__feed .novedades div {display: flex; flex-direction: column-reverse;} 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    overflow: hidden;
+    width: 40%; 
+    padding: 0 10px;}
+    .novedades__feed .novedades a{text-decoration: none; height: 100%;}
+    .novedades__feed .novedades div {display: flex; flex-direction: column-reverse; justify-content: center; align-items: left; overflow: hidden;} 
+    .novedades__feed .novedades div div {width: 100%; height: 100%; transition: 1s;}  
       .novedades__feed .novedades div h2 {
+        font-size: min(30px, max(3vw, 22px));
         padding: 2%;
-        font-size: 30px;
-        color: white;} 
-    .novedades__feed .novedades iframe {
-      width: 100%;
-      height: 100%; }
+        color: white;
+        transition: 1s;}
     .novedades__feed .novedades .novedades__imagen--1 {
+      background-image:  url("../Imagenes/zola.png");
       background-size: cover;
-      background-position: center;
-      background-image: url("../Imagenes/zola.png"); }
+      background-position: center; }
     .novedades__feed .novedades .novedades__imagen--2 {
       background-size: cover;
-      background-position: center;
+      background-position: center 50%;
       background-image: url("../Imagenes/novedades.jpg"); }
+    .novedades__feed .novedades .novedades__imagen--3 {
+      background-size: cover;
+      background-position: center 40%;
+      background-image: url("../Imagenes/lamb2.png"); }
+    .novedades__feed .novedades .novedades__imagen--4 {
+      background-size: cover;
+      background-position: center;
+      background-image: url("../Imagenes/macbeth2.jpg"); }
+
+      @media only screen and (max-width: 991px){
+        .novedades__feed .novedades__titular {background-image: url("../Imagenes/travisscott2.jpg"); background-position: 45%;}
+        .novedades__feed {flex-wrap: wrap;}
+        .novedades__feed .novedades__titular {width: 100%;}
+        .novedades__feed .novedades {
+          width: 90%; 
+          height: 100vh;
+          justify-content: center; 
+          padding: 10% 0 0 0;
+          gap: 20px;}
+          .novedades__feed .novedades div {justify-content: end;}
+      }
+    @media only screen and (min-width: 992px){
+      .novedades__feed .novedades__titular:hover {transform: scale(1.1);}
+      .novedades__feed .novedades__titular:hover h2 {transform: scale(0.9);}
+      .novedades__feed .novedades div:hover div {transform: scale(1.08);}
+      .novedades__feed .novedades div:hover div h2 {transform: scale(0.92); color: rgb(255, 255, 255, 0)}
+    }

@@ -1,7 +1,7 @@
 /*Header*/
 * {font: 16px 'roboto';}
-header{display: flex; justify-content: space-between; padding: 20px;}
-.logo {width: max(min(28vw, 150px), (10vw));}
+header{display: flex; justify-content: space-between; align-items: center; height: 10vh; padding: 0 20px;}
+.logo {width: min(28vw, 140px);}
 .navbar {width: 100%;}
 .navbar-nav {display: flex; justify-content: space-evenly; width: 100%;}
 .navbar-toggler {transform: scale(1.2);}
@@ -16,7 +16,6 @@ footer{
     gap: 3vh;
     padding: min(80px, 8%) 0;
 }
-footer a{margin-right: 32px;}
 .footer {
     display: flex; 
     justify-content: space-between;
