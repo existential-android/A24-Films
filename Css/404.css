@@ -1,5 +1,4 @@
 section {
-    background: black;
     display: flex; 
     flex-direction: column;
     justify-content: center; 
@@ -7,5 +6,5 @@ section {
     flex-wrap: wrap;
     height: 90vh;
 }
-h1, p {color:white;}
-h1 {font: 28px 'Playfair Display';}
+.error {width: max(40%, min(300px, 90vw)); margin-bottom: 2%;}
+p {font: min(25px, max(4vw, 14px)) 'roboto'; text-align: center; padding: 0 7%;}
